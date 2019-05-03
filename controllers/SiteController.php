@@ -62,7 +62,7 @@ class SiteController extends Controller
      */
     public function actionIndex()
     {
-        var_dump(Users::find()->all());exit;
+//        var_dump(Users::find()->all());exit;
         return $this->render('index');
     }
 
