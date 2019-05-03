@@ -1,6 +1,6 @@
 <?php
 
-if ($_SERVER['SERVER_NAME'] == "https://afternoon-citadel-12331.herokuapp.com/") {
+if ($_SERVER['SERVER_NAME'] == "afternoon-citadel-12331.herokuapp.com") {
     $url = parse_url(getenv("CLEARDB_DATABASE_URL"));
     $host = $url["host"];
     $username = $url["user"];
