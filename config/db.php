@@ -8,19 +8,17 @@ if ($_SERVER['SERVER_NAME'] == "afternoon-citadel-12331.herokuapp.com") {
     $dbname = substr($url["path"], 1);
 } else {
     $host = 'localhost';
-    $dbname = 'yii2basic';
+    $dbname = 'task_db';
     $username = 'root';
     $password = '';
 }
 $dbConfig = [
     'class' => 'yii\db\Connection',
-    'dsn' => "mysql:host={$host};dbname={$dbname}",
+    'dsn' => "mysql:host={$host};port=3307;dbname={$dbname}",
     'username' => $username,
     'password' => $password,
     'charset' => 'utf8',
 ];
-var_dump($_SERVER['SERVER_NAME']);
-var_dump($dbConfig);exit;
 return $dbConfig;
 
 //return [
