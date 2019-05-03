@@ -19,7 +19,8 @@ $dbConfig = [
     'password' => $password,
     'charset' => 'utf8',
 ];
-var_dump($dbConfig);
+var_dump($_SERVER['SERVER_NAME']);
+var_dump($dbConfig);exit;
 return $dbConfig;
 
 //return [
