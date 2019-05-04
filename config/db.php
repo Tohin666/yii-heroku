@@ -14,7 +14,7 @@ if ($_SERVER['SERVER_NAME'] == "afternoon-citadel-12331.herokuapp.com") {
 }
 $dbConfig = [
     'class' => 'yii\db\Connection',
-    'dsn' => "mysql:host={$host};port=3307;dbname={$dbname}",
+    'dsn' => "mysql:host={$host};dbname={$dbname}",
     'username' => $username,
     'password' => $password,
     'charset' => 'utf8',
