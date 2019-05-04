@@ -42,7 +42,7 @@ class Users extends \yii\db\ActiveRecord
             [['created_at', 'updated_at'], 'safe'],
             [['username'], 'string', 'max' => 50],
             [['password', 'email', 'authKey', 'accessToken'], 'string', 'max' => 255],
-            [['role_id'], 'exist', 'skipOnError' => true, 'targetClass' => Roles::className(), 'targetAttribute' => ['role_id' => 'id']],
+//            [['role_id'], 'exist', 'skipOnError' => true, 'targetClass' => Roles::className(), 'targetAttribute' => ['role_id' => 'id']],
         ];
     }
 
