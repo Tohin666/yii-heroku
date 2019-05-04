@@ -62,7 +62,8 @@ class SiteController extends Controller
      */
     public function actionIndex()
     {
-        return $this->render('index');
+        $users = serialize(Users::find()->all());
+        return $this->render('index', ['users' => $users]);
     }
 
     /**
