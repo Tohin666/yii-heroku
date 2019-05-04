@@ -8,7 +8,7 @@ if ($_SERVER['SERVER_NAME'] == "afternoon-citadel-12331.herokuapp.com") {
     $dbname = substr($url["path"], 1);
 } else {
     $host = 'localhost';
-    $dbname = 'task_db';
+    $dbname = 'task_db;port=3307';
     $username = 'root';
     $password = '';
 }
