@@ -1,40 +1,27 @@
 <?php
 
 /* @var $this yii\web\View */
+/* @var $someData string */
 
 use app\assets\YandexmapAsset;
 
 $this->title = 'My Yii Application';
 
 YandexmapAsset::register($this);
+
 ?>
 
 <div class="site-index">
 
-    <div id="map" style="width: 600px; height: 400px"></div>
+    <div id="map" style="width: 1200px; height: 800px"></div>
 
 
 </div>
 
-
-<script type="text/javascript">
-    // Функция ymaps.ready() будет вызвана, когда
-    // загрузятся все компоненты API, а также когда будет готово DOM-дерево.
-    ymaps.ready(init);
-    function init(){
-        // Создание карты.
-        var myMap = new ymaps.Map("map", {
-            // Координаты центра карты.
-            // Порядок по умолчанию: «широта, долгота».
-            // Чтобы не определять координаты центра карты вручную,
-            // воспользуйтесь инструментом Определение координат.
-            center: [55.76, 37.64],
-            // Уровень масштабирования. Допустимые значения:
-            // от 0 (весь мир) до 19.
-            zoom: 7
-        });
-    }
+<script>
+    var someData = '<?php echo $someData; ?>';
 </script>
+
 
 
 <!--<div class="site-index">-->

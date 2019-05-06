@@ -12,7 +12,8 @@ class YandexmapAsset extends AssetBundle
     public $css = [
     ];
     public $js = [
-        'https://api-maps.yandex.ru/2.1/?apikey=e44f02d7-5ab4-4a5b-a382-ca2665e3825e&lang=ru_RU'
+        'https://api-maps.yandex.ru/2.1/?apikey=e44f02d7-5ab4-4a5b-a382-ca2665e3825e&lang=ru_RU',
+        'js/yandexmaps.js'
     ];
     public $depends = [
     ];
